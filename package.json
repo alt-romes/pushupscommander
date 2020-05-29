@@ -1,0 +1,22 @@
+{
+  "name": "pushupscommander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pushupscommander.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alt-romes/pushupscommander.git"
+  },
+  "author": "romes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alt-romes/pushupscommander/issues"
+  },
+  "homepage": "https://github.com/alt-romes/pushupscommander#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
