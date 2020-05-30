@@ -104,7 +104,7 @@ client.on('message', message => {
         let cmd = message.content.slice(cmdprefix.length).trim().split(" ")[0];
 
         if (cmd == "today" || cmd == "t") {
-            client.getPushups(message.author.id, message.guild.id, "today", message, "/60 pushups today.");
+            client.getPushups(message.author.id, message.guild.id, "today", message, "/100 pushups today.");
         } else if (cmd == "all" || cmd == "a") {
             client.getPushups(message.author.id, message.guild.id, null, message, " pushups since you started.");
         } else if (cmd == "server" || cmd == "s") {
