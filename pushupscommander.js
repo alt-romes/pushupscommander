@@ -102,11 +102,11 @@ function getType(content) {
 
 client.on('message', message => {
     if (message.content.startsWith("+") || message.content.startsWith("-")) {
-        let n = parseInt(message.content.slice(1)) // parseInt apparently splits on space
-        if(Number.isInteger(n) && n != 0) {
+        let content = message.content.split(" ")
+        let n = parseFloat(content[0].slice(1)) // parseInt apparently splits on space
+        if(typeof n === "number" && n != 0) {
             if(message.content.startsWith("-")) n = -n;
 
-            let content = message.content.split(" ")
 
             let type = getType(content)
 
